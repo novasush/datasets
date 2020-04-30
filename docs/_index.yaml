@@ -21,14 +21,11 @@ landing_page:
         To get started see the
         <a href="./overview">guide</a>
         and our
-        <a href="./datasets">list of datasets</a>.
+        <a href="./catalog">list of datasets</a>.
     - code_block: |
         <pre class = "prettyprint">
         import tensorflow.compat.v2 as tf
         import tensorflow_datasets as tfds
-
-        # tfds works in both Eager and Graph modes
-        tf.enable_v2_behavior()
 
         # Construct a tf.data.Dataset
         ds = tfds.load('mnist', split='train', shuffle_files=True)
